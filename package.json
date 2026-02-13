@@ -1,13 +1,13 @@
 {
   "name": "2d-scene",
   "version": "1.19.3",
-  "author": "Wicklets LLC",
+  "author": "thesharmavikash",
   "private": true,
   "homepage": "./",
   "main": "./public/electron.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wicklets/2d-scene.git"
+    "url": "https://github.com/thesharmavikash/2d-scene.git"
   },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.7.0",
