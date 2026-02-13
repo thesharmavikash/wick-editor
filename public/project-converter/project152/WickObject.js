@@ -1220,7 +1220,7 @@ WickObject.prototype.tick = function () {
                 (wickPlayer || wickEditor).project.runScript(this, 'update');
 
                 // Force playhead update on first tick to fix:
-                // https://github.com/zrispo/wick-editor/issues/810
+                // https://github.com/zrispo/2d-scene/issues/810
                 if(this._newPlayheadPosition) {
                     this.playheadPosition = this._newPlayheadPosition;
                     this._newPlayheadPosition = undefined;

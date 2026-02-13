@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://github.com/Wicklets/wick-editor/issues">
+  <a href="https://github.com/Wicklets/2d-scene/issues">
       <img src="https://img.shields.io/badge/contributions-welcome-orange.svg"/>
   </a>
   <a href="https://www.patreon.com/WickEditor">
@@ -39,13 +39,13 @@ You'll need to download the following:
 1) Clone this repository:
 
     ```bash
-    git clone https://github.com/Wicklets/wick-editor/
+    git clone https://github.com/Wicklets/2d-scene/
     ```
 
-2) Using the command line, change directories into the newly created `wick-editor` folder:
+2) Using the command line, change directories into the newly created `2d-scene` folder:
 
     ```bash
-    cd wick-editor
+    cd 2d-scene
     ```
 
 3) Install all dependencies using this command:
@@ -103,7 +103,7 @@ To deploy, you'll need to have push access to this repo.
 
 ## Building and Releasing the Desktop App 
 
-Please refer to this Wiki entry for information on our dektop build processes! [https://github.com/Wicklets/wick-editor/wiki/Building-Desktop-Editors-for-Release](https://github.com/Wicklets/wick-editor/wiki/Building-Desktop-Editors-for-Release).
+Please refer to this Wiki entry for information on our dektop build processes! [https://github.com/Wicklets/2d-scene/wiki/Building-Desktop-Editors-for-Release](https://github.com/Wicklets/2d-scene/wiki/Building-Desktop-Editors-for-Release).
 
 If you are familiar with electron-builder, electron-packager, or have experience building desktop electron apps for production, we could use your help! Please message us or open an issue.
 

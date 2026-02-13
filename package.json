@@ -1,5 +1,5 @@
 {
-  "name": "wick-editor",
+  "name": "2d-scene",
   "version": "1.19.3",
   "author": "Wicklets LLC",
   "private": true,
@@ -7,7 +7,7 @@
   "main": "./public/electron.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wicklets/wick-editor.git"
+    "url": "https://github.com/Wicklets/2d-scene.git"
   },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.7.0",
@@ -109,7 +109,7 @@
     "predeploy": "npm run build",
     "editor-deploy": "npm run build; rm -r ../wick-site/public/editor; mkdir ../wick-site/public/editor; cp -r build/* ../wick-site/public/editor; cd ../wick-site/public/editor; rm CNAME; echo 'wickeditor.com/editor/' > CNAME; git add .; git commit -m 'update release build'; git push --force;",
     "test-deploy": "npm run build; rm -r ../wick-site/public/test; mkdir ../wick-site/public/test; cp -r build/* ../wick-site/public/test; cd ../wick-site/public/test; rm CNAME; echo 'wickeditor.com/test/' > CNAME; git add .; git commit -m 'update prerelease build'; git push --force;",
-    "prerelease-deploy": "npm run build; cp -r build/* ../wick-editor-prerelease/; cd ../wick-editor-prerelease; rm CNAME; echo 'test.wickeditor.com' > CNAME; git add .; git commit -m 'update prerelease build'; git push --force;",
+    "prerelease-deploy": "npm run build; cp -r build/* ../2d-scene-prerelease/; cd ../2d-scene-prerelease; rm CNAME; echo 'test.wickeditor.com' > CNAME; git add .; git commit -m 'update prerelease build'; git push --force;",
     "deploy": "gh-pages -d build",
     "electron": "electron .",
     "electron-dev-macos": "ELECTRON_START_URL=http://localhost:3000 electron .",
@@ -119,8 +119,8 @@
     "package-mac": "npm run build; electron-builder --mac",
     "package-windows": "npm run build; electron-builder --windows",
     "package-linux": "npm run build; electron-builder --linux",
-    "phonegap-deploy": "npm run build; cd ../wick-editor-phonegap; npm run prepare-dir; cd ../wick-editor; cp -r build/* ../wick-editor-phonegap/www; cd ../wick-editor-phonegap; npm run prepare-app; git add .; git commit -m 'update phonegap build'; git push --force;",
-    "phonegap-predeploy": "npm run build; cd ../wick-editor-phonegap; npm run prepare-dir; cd ../wick-editor; cp -r build/* ../wick-editor-phonegap/www; cd ../wick-editor-phonegap; npm run prepare-app;"
+    "phonegap-deploy": "npm run build; cd ../2d-scene-phonegap; npm run prepare-dir; cd ../2d-scene; cp -r build/* ../2d-scene-phonegap/www; cd ../2d-scene-phonegap; npm run prepare-app; git add .; git commit -m 'update phonegap build'; git push --force;",
+    "phonegap-predeploy": "npm run build; cd ../2d-scene-phonegap; npm run prepare-dir; cd ../2d-scene; cp -r build/* ../2d-scene-phonegap/www; cd ../2d-scene-phonegap; npm run prepare-app;"
   },
   "eslintConfig": {
     "extends": "react-app"
